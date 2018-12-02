@@ -14,6 +14,7 @@ protocol BerlinOfficeDelegate: AnyObject {
 
 enum BerlinOfficeAction {
     case showDetail(employee: Employee)
+    case showGrid(berlinOfficeVC: BerlinOfficeViewController, employees: [Employee])
 }
 
 class BerlinOfficeViewController: UITableViewController {
@@ -24,6 +25,10 @@ class BerlinOfficeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+    }
+
+    @IBAction private func toGridDidPress(_ sender: Any) {
+        delegate?.perform(action: .showGrid(berlinOfficeVC: self, employees: employees))
     }
 
     // MARK: - Table view data source

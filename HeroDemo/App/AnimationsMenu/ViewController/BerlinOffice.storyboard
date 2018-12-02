@@ -78,6 +78,14 @@
                             <outlet property="delegate" destination="7cM-mG-r4g" id="bBO-Ja-rsi"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="qK9-X5-Sxp" userLabel="Grid View">
+                        <barButtonItem key="rightBarButtonItem" title="to grid" id="b68-D3-3mg">
+                            <connections>
+                                <action selector="toGridDidPress:" destination="7cM-mG-r4g" id="hAm-m6-bRM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRH-f0-pPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

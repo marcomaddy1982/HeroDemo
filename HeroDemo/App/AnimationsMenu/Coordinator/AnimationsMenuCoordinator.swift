@@ -65,6 +65,8 @@ extension AnimationsMenuCoordinator: BerlinOfficeDelegate {
         switch action {
         case .showDetail(let employee):
             showEmployeeDetail(with: employee)
+        case .showGrid(let berlinOfficeVC, let employees):
+            showBerlinOfficeGrid(from: berlinOfficeVC, with: employees)
         }
     }
 
@@ -75,5 +77,37 @@ extension AnimationsMenuCoordinator: BerlinOfficeDelegate {
         }
         employeeDetailViewController.employee = employee
         navigationController.pushViewController(employeeDetailViewController, animated: true)
+    }
+
+    private func showBerlinOfficeGrid(from berlinOfficeVC: BerlinOfficeViewController,
+                                      with employees: [Employee]) {
+        guard let berlinOfficeGridViewController: BerlinOfficeGridViewController =
+            UIStoryboard.create(viewController: .berlinOfficeGrid) else {
+                return
+        }
+
+        berlinOfficeGridViewController.delegate = self
+        berlinOfficeGridViewController.employees = employees
+        // Replace the current view controller with another VC on the navigation/modal stack.
+        berlinOfficeVC.hero.replaceViewController(with: berlinOfficeGridViewController)
+    }
+}
+
+extension AnimationsMenuCoordinator: BerlinOfficeGridDelegate {
+    func perform(action: BerlinOfficeGridAction) {
+        switch action {
+        case .showList(let berlinOfficeGridVC):
+            showBerlinOffice(from: berlinOfficeGridVC)
+        }
+    }
+
+    private func showBerlinOffice(from berlinOfficeGridVC: BerlinOfficeGridViewController){
+        guard let berlinOfficeViewController: BerlinOfficeViewController =
+            UIStoryboard.create(viewController: .berlinOffice) else {
+                return
+        }
+        berlinOfficeViewController.delegate = self
+        // Replace the current view controller with another VC on the navigation/modal stack.
+        berlinOfficeGridVC.hero.replaceViewController(with: berlinOfficeViewController)
     }
 }

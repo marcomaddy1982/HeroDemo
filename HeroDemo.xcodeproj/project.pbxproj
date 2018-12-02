@@ -31,6 +31,9 @@
 		286F779121B465C30069C12E /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F779021B465C30069C12E /* EmployeeDetailViewController.swift */; };
 		286F779321B465D40069C12E /* EmployeeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F779221B465D40069C12E /* EmployeeDetail.storyboard */; };
 		286F779521B46A4B0069C12E /* HeroIdCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F779421B46A4B0069C12E /* HeroIdCreator.swift */; };
+		28DF82B921B4775B005943EF /* BerlinOfficeGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */; };
+		28DF82BB21B47773005943EF /* BerlinOfficeGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */; };
+		28DF82BD21B47817005943EF /* EmployeeGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */; };
 		48A1BD2395EA798CE61149E5 /* Pods_HeroDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		286F779021B465C30069C12E /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
 		286F779221B465D40069C12E /* EmployeeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeDetail.storyboard; sourceTree = "<group>"; };
 		286F779421B46A4B0069C12E /* HeroIdCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroIdCreator.swift; sourceTree = "<group>"; };
+		28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinOfficeGridViewController.swift; sourceTree = "<group>"; };
+		28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BerlinOfficeGrid.storyboard; sourceTree = "<group>"; };
+		28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeGridViewCell.swift; sourceTree = "<group>"; };
 		CFA3280A785352680990C16A /* Pods-HeroDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroDemo/Pods-HeroDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,6 +195,8 @@
 				286F777021B4287A0069C12E /* AnimationsMenu.storyboard */,
 				286F778721B459E00069C12E /* BerlinOfficeViewController.swift */,
 				286F778921B459EC0069C12E /* BerlinOffice.storyboard */,
+				28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */,
+				28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */,
 				286F779021B465C30069C12E /* EmployeeDetailViewController.swift */,
 				286F779221B465D40069C12E /* EmployeeDetail.storyboard */,
 			);
@@ -228,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				286F778E21B45DB10069C12E /* EmployeeViewCell.swift */,
+				28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +326,7 @@
 				286F777121B4287A0069C12E /* AnimationsMenu.storyboard in Resources */,
 				286F778A21B459EC0069C12E /* BerlinOffice.storyboard in Resources */,
 				286F779321B465D40069C12E /* EmployeeDetail.storyboard in Resources */,
+				28DF82BB21B47773005943EF /* BerlinOfficeGrid.storyboard in Resources */,
 				286F777A21B4412C0069C12E /* AnimationSecond.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,8 +389,10 @@
 				286F777421B42B1E0069C12E /* AnimationViewController.swift in Sources */,
 				286F778421B4521F0069C12E /* BerlinOffice.swift in Sources */,
 				286F775921B419720069C12E /* Coordinator.swift in Sources */,
+				28DF82B921B4775B005943EF /* BerlinOfficeGridViewController.swift in Sources */,
 				286F778F21B45DB10069C12E /* EmployeeViewCell.swift in Sources */,
 				286F775E21B41CF20069C12E /* AnimationsCoordinator.swift in Sources */,
+				28DF82BD21B47817005943EF /* EmployeeGridViewCell.swift in Sources */,
 				286F779521B46A4B0069C12E /* HeroIdCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

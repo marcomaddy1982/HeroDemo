@@ -11,6 +11,7 @@ import UIKit
 enum ViewControllerType: String {
     case animationsMenu
     case berlinOffice
+    case berlinOfficeGrid
     case employeeDetail
     case animation
     case animationSecond

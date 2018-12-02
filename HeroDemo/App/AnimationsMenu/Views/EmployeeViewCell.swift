@@ -17,6 +17,7 @@ class EmployeeViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        hero.modifiers = [.fade, .translate(x:-100)]
         profileImage.clipsToBounds = true
         profileImage.layer.cornerRadius = profileImage.bounds.width / 2
         profileImage.hero.modifiers = [.arc()]

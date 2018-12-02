@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Berlin Office Grid View Controller-->
+        <scene sceneID="AJT-Se-4sj">
+            <objects>
+                <collectionViewController storyboardIdentifier="berlinOfficeGrid" id="AxT-Ch-v9S" customClass="BerlinOfficeGridViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pvz-nJ-PEz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2Tk-VK-YeE">
+                            <size key="itemSize" width="115" height="168"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmployeeGridViewCell" id="ghZ-Jv-iGf" customClass="EmployeeGridViewCell" customModule="HeroDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="115" height="168"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-Rw-PSz" userLabel="Image - Profile">
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="117"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVT-1U-R3L" userLabel="Label - Name">
+                                            <rect key="frame" x="8" y="123" width="99" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMM-ns-kuV" userLabel="Label - Role">
+                                            <rect key="frame" x="8" y="144" width="99" height="16"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fFb-Rw-PSz" firstAttribute="leading" secondItem="ghZ-Jv-iGf" secondAttribute="leading" id="5U6-zo-Ada"/>
+                                    <constraint firstItem="uVT-1U-R3L" firstAttribute="top" secondItem="fFb-Rw-PSz" secondAttribute="bottom" constant="6" id="F0A-YH-CY0"/>
+                                    <constraint firstItem="cMM-ns-kuV" firstAttribute="leading" secondItem="ghZ-Jv-iGf" secondAttribute="leading" constant="8" id="N8t-n0-Q1K"/>
+                                    <constraint firstItem="uVT-1U-R3L" firstAttribute="leading" secondItem="ghZ-Jv-iGf" secondAttribute="leadingMargin" id="Q7o-cc-lO2"/>
+                                    <constraint firstAttribute="trailing" secondItem="cMM-ns-kuV" secondAttribute="trailing" constant="8" id="Wyi-tG-eM4"/>
+                                    <constraint firstItem="fFb-Rw-PSz" firstAttribute="top" secondItem="ghZ-Jv-iGf" secondAttribute="top" id="dQQ-nz-v6m"/>
+                                    <constraint firstAttribute="trailing" secondItem="uVT-1U-R3L" secondAttribute="trailing" constant="8" id="jl2-TG-48v"/>
+                                    <constraint firstItem="cMM-ns-kuV" firstAttribute="top" secondItem="uVT-1U-R3L" secondAttribute="bottom" id="nQM-XT-EAk"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="cMM-ns-kuV" secondAttribute="bottom" id="uFK-VW-f2e"/>
+                                    <constraint firstAttribute="trailing" secondItem="fFb-Rw-PSz" secondAttribute="trailing" id="xmj-Mz-iqo"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="nameLabel" destination="uVT-1U-R3L" id="JFt-4Z-jkl"/>
+                                    <outlet property="profileImage" destination="fFb-Rw-PSz" id="ExS-7d-TJO"/>
+                                    <outlet property="roleLabel" destination="cMM-ns-kuV" id="bSG-ru-1hW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="AxT-Ch-v9S" id="fjk-F7-RL3"/>
+                            <outlet property="delegate" destination="AxT-Ch-v9S" id="sCz-X3-GXS"/>
+                        </connections>
+                    </collectionView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="tda-4W-neO" userLabel="Grid View">
+                        <barButtonItem key="rightBarButtonItem" title="to list" id="yy5-78-LJQ">
+                            <connections>
+                                <action selector="toListDidPress:" destination="AxT-Ch-v9S" id="p60-2w-tIA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDp-OL-L9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="3716"/>
+        </scene>
+    </scenes>
+</document>
