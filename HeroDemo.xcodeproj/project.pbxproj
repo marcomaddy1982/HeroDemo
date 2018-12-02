@@ -12,9 +12,23 @@
 		286F774B21B418E30069C12E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F774921B418E30069C12E /* Main.storyboard */; };
 		286F774D21B418E50069C12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286F774C21B418E50069C12E /* Assets.xcassets */; };
 		286F775021B418E50069C12E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F774E21B418E50069C12E /* LaunchScreen.storyboard */; };
+		286F775921B419720069C12E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F775821B419720069C12E /* Coordinator.swift */; };
+		286F775B21B419D00069C12E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F775A21B419D00069C12E /* TabBarCoordinator.swift */; };
+		286F775E21B41CF20069C12E /* AnimationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F775D21B41CF20069C12E /* AnimationsCoordinator.swift */; };
+		286F776121B41D120069C12E /* TransitionsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F776021B41D120069C12E /* TransitionsCoordinator.swift */; };
+		286F776821B4267F0069C12E /* StoryboardExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F776721B4267F0069C12E /* StoryboardExtentions.swift */; };
+		286F776A21B427180069C12E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F776921B427180069C12E /* StringExtensions.swift */; };
+		286F776F21B4286D0069C12E /* TransitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F776E21B4286D0069C12E /* TransitionsViewController.swift */; };
+		286F777121B4287A0069C12E /* Transitions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F777021B4287A0069C12E /* Transitions.storyboard */; };
+		286F777421B42B1E0069C12E /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F777321B42B1E0069C12E /* AnimationViewController.swift */; };
+		286F777621B42B3F0069C12E /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F777521B42B3F0069C12E /* Animation.storyboard */; };
+		286F777821B43D9B0069C12E /* AnimationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F777721B43D9B0069C12E /* AnimationSecondViewController.swift */; };
+		286F777A21B4412C0069C12E /* AnimationSecond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F777921B4412C0069C12E /* AnimationSecond.storyboard */; };
+		48A1BD2395EA798CE61149E5 /* Pods_HeroDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F4326AD3C2A4E761CBD4AB1 /* Pods-HeroDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroDemo/Pods-HeroDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		286F774221B418E30069C12E /* HeroDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286F774521B418E30069C12E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286F774721B418E30069C12E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +36,20 @@
 		286F774C21B418E50069C12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		286F774F21B418E50069C12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		286F775121B418E50069C12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		286F775821B419720069C12E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		286F775A21B419D00069C12E /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		286F775D21B41CF20069C12E /* AnimationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsCoordinator.swift; sourceTree = "<group>"; };
+		286F776021B41D120069C12E /* TransitionsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsCoordinator.swift; sourceTree = "<group>"; };
+		286F776721B4267F0069C12E /* StoryboardExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtentions.swift; sourceTree = "<group>"; };
+		286F776921B427180069C12E /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		286F776E21B4286D0069C12E /* TransitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsViewController.swift; sourceTree = "<group>"; };
+		286F777021B4287A0069C12E /* Transitions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transitions.storyboard; sourceTree = "<group>"; };
+		286F777321B42B1E0069C12E /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		286F777521B42B3F0069C12E /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
+		286F777721B43D9B0069C12E /* AnimationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSecondViewController.swift; sourceTree = "<group>"; };
+		286F777921B4412C0069C12E /* AnimationSecond.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationSecond.storyboard; sourceTree = "<group>"; };
+		CFA3280A785352680990C16A /* Pods-HeroDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroDemo/Pods-HeroDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A1BD2395EA798CE61149E5 /* Pods_HeroDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +69,8 @@
 			children = (
 				286F774421B418E30069C12E /* HeroDemo */,
 				286F774321B418E30069C12E /* Products */,
+				EF315FE407029119B1049AA8 /* Pods */,
+				6FCF9C6E11E6BCB6289DA490 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +85,8 @@
 		286F774421B418E30069C12E /* HeroDemo */ = {
 			isa = PBXGroup;
 			children = (
+				286F776421B426100069C12E /* Utility */,
+				286F776521B426220069C12E /* App */,
 				286F774521B418E30069C12E /* AppDelegate.swift */,
 				286F774721B418E30069C12E /* ViewController.swift */,
 				286F774921B418E30069C12E /* Main.storyboard */,
@@ -64,6 +97,113 @@
 			path = HeroDemo;
 			sourceTree = "<group>";
 		};
+		286F775721B4195F0069C12E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				286F775821B419720069C12E /* Coordinator.swift */,
+				286F775A21B419D00069C12E /* TabBarCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		286F775C21B41CB30069C12E /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				286F776B21B428120069C12E /* Coordinator */,
+				286F777221B42AFC0069C12E /* ViewController */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		286F775F21B41CFD0069C12E /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				286F776C21B4281C0069C12E /* Coordinator */,
+				286F776D21B428300069C12E /* ViewController */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		286F776421B426100069C12E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				286F776621B426310069C12E /* Extentions */,
+				286F775721B4195F0069C12E /* Coordinators */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		286F776521B426220069C12E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				286F775C21B41CB30069C12E /* Animations */,
+				286F775F21B41CFD0069C12E /* Transitions */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		286F776621B426310069C12E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				286F776721B4267F0069C12E /* StoryboardExtentions.swift */,
+				286F776921B427180069C12E /* StringExtensions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		286F776B21B428120069C12E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				286F775D21B41CF20069C12E /* AnimationsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		286F776C21B4281C0069C12E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				286F776021B41D120069C12E /* TransitionsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		286F776D21B428300069C12E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				286F776E21B4286D0069C12E /* TransitionsViewController.swift */,
+				286F777021B4287A0069C12E /* Transitions.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		286F777221B42AFC0069C12E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				286F777321B42B1E0069C12E /* AnimationViewController.swift */,
+				286F777521B42B3F0069C12E /* Animation.storyboard */,
+				286F777721B43D9B0069C12E /* AnimationSecondViewController.swift */,
+				286F777921B4412C0069C12E /* AnimationSecond.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6FCF9C6E11E6BCB6289DA490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF315FE407029119B1049AA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F4326AD3C2A4E761CBD4AB1 /* Pods-HeroDemo.debug.xcconfig */,
+				CFA3280A785352680990C16A /* Pods-HeroDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 286F775421B418E50069C12E /* Build configuration list for PBXNativeTarget "HeroDemo" */;
 			buildPhases = (
+				8387DD793519070739A58824 /* [CP] Check Pods Manifest.lock */,
 				286F773E21B418E30069C12E /* Sources */,
 				286F773F21B418E30069C12E /* Frameworks */,
 				286F774021B418E30069C12E /* Resources */,
+				B3BE4CCE06E4AE0625008564 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +267,69 @@
 				286F775021B418E50069C12E /* LaunchScreen.storyboard in Resources */,
 				286F774D21B418E50069C12E /* Assets.xcassets in Resources */,
 				286F774B21B418E30069C12E /* Main.storyboard in Resources */,
+				286F777621B42B3F0069C12E /* Animation.storyboard in Resources */,
+				286F777121B4287A0069C12E /* Transitions.storyboard in Resources */,
+				286F777A21B4412C0069C12E /* AnimationSecond.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8387DD793519070739A58824 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeroDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3BE4CCE06E4AE0625008564 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeroDemo/Pods-HeroDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroDemo/Pods-HeroDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		286F773E21B418E30069C12E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286F776A21B427180069C12E /* StringExtensions.swift in Sources */,
+				286F777821B43D9B0069C12E /* AnimationSecondViewController.swift in Sources */,
+				286F776F21B4286D0069C12E /* TransitionsViewController.swift in Sources */,
+				286F776821B4267F0069C12E /* StoryboardExtentions.swift in Sources */,
 				286F774821B418E30069C12E /* ViewController.swift in Sources */,
+				286F776121B41D120069C12E /* TransitionsCoordinator.swift in Sources */,
 				286F774621B418E30069C12E /* AppDelegate.swift in Sources */,
+				286F775B21B419D00069C12E /* TabBarCoordinator.swift in Sources */,
+				286F777421B42B1E0069C12E /* AnimationViewController.swift in Sources */,
+				286F775921B419720069C12E /* Coordinator.swift in Sources */,
+				286F775E21B41CF20069C12E /* AnimationsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +473,7 @@
 		};
 		286F775521B418E50069C12E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4326AD3C2A4E761CBD4AB1 /* Pods-HeroDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +492,7 @@
 		};
 		286F775621B418E50069C12E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA3280A785352680990C16A /* Pods-HeroDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

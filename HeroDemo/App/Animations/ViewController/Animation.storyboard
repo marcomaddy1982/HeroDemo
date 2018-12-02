@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation View Controller-->
+        <scene sceneID="RUq-mY-Kgm">
+            <objects>
+                <viewController storyboardIdentifier="animation" id="JmY-OW-REo" customClass="AnimationViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7w-ZE-Q7J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For handling transition inside UINavigationController. You have to set isHeroEnabled on the navigationController" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-Xm-zho" userLabel="Label - Info">
+                                <rect key="frame" x="44" y="60" width="287" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vFb-XS-BPR" userLabel="Switch - Hero Enable/Disable">
+                                <rect key="frame" x="282" y="140.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleIsHeroEnabled:" destination="JmY-OW-REo" eventType="valueChanged" id="98W-4j-EsQ"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isHeroEnabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgQ-is-Eoi" userLabel="Label - isHeroEnabled">
+                                <rect key="frame" x="44" y="145.5" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfd-y3-6mC" userLabel="Button - Next">
+                                <rect key="frame" x="171.5" y="597" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonDidPress:" destination="JmY-OW-REo" eventType="touchUpInside" id="QOs-7X-cd6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7w-2m-lMK" userLabel="Label - First">
+                                <rect key="frame" x="156" y="249.5" width="63" height="168"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="140"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="item"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FQB-8N-8bu" firstAttribute="trailing" secondItem="ygc-Xm-zho" secondAttribute="trailing" constant="44" id="4HI-3V-v1g"/>
+                            <constraint firstItem="e7w-2m-lMK" firstAttribute="centerX" secondItem="u7w-ZE-Q7J" secondAttribute="centerX" id="7D3-Ys-ndH"/>
+                            <constraint firstItem="FQB-8N-8bu" firstAttribute="trailing" secondItem="vFb-XS-BPR" secondAttribute="trailing" constant="44" id="7c6-qi-Db8"/>
+                            <constraint firstItem="ygc-Xm-zho" firstAttribute="top" secondItem="FQB-8N-8bu" secondAttribute="top" constant="40" id="9Ar-Q8-8q4"/>
+                            <constraint firstItem="Lfd-y3-6mC" firstAttribute="centerX" secondItem="u7w-ZE-Q7J" secondAttribute="centerX" id="9Qj-qy-ZeU"/>
+                            <constraint firstItem="ygc-Xm-zho" firstAttribute="leading" secondItem="FQB-8N-8bu" secondAttribute="leading" constant="44" id="FwQ-Kk-82h"/>
+                            <constraint firstItem="FQB-8N-8bu" firstAttribute="bottom" secondItem="Lfd-y3-6mC" secondAttribute="bottom" constant="40" id="a9I-u1-10l"/>
+                            <constraint firstItem="e7w-2m-lMK" firstAttribute="centerY" secondItem="u7w-ZE-Q7J" secondAttribute="centerY" id="fo6-g0-nkl"/>
+                            <constraint firstItem="vFb-XS-BPR" firstAttribute="top" secondItem="ygc-Xm-zho" secondAttribute="bottom" constant="30" id="rL6-X5-wV0"/>
+                            <constraint firstItem="vFb-XS-BPR" firstAttribute="centerY" secondItem="hgQ-is-Eoi" secondAttribute="centerY" id="uVT-Yp-yRT"/>
+                            <constraint firstItem="hgQ-is-Eoi" firstAttribute="leading" secondItem="FQB-8N-8bu" secondAttribute="leading" constant="44" id="wip-Hw-HPH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FQB-8N-8bu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E16-NV-hgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="155"/>
+        </scene>
+    </scenes>
+</document>
