@@ -9,7 +9,9 @@
 import UIKit
 
 enum ViewControllerType: String {
-    case transitions
+    case animationsMenu
+    case berlinOffice
+    case employeeDetail
     case animation
     case animationSecond
 }

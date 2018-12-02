@@ -19,17 +19,17 @@ enum Tab {
 
 extension Tab {
     static var all: [Tab] {
-        return [.transitions, .animations]
+        return [.animations, .transitions]
     }
 }
 
 extension Tab {
     var tabBarItem: UITabBarItem {
         switch self {
-        case .transitions:
-            return UITabBarItem(title: "Transitions", image: nil, tag: 0)
         case .animations:
-            return UITabBarItem(title: "Animations", image: nil, tag: 1)
+            return UITabBarItem(title: "Animations", image: nil, tag: 0)
+        case .transitions:
+            return UITabBarItem(title: "Transitions", image: nil, tag: 1)
         }
     }
 }
@@ -68,19 +68,19 @@ final class TabBarCoordinator: Coordinator {
 
     func switchTab(toTab: Tab) {
         switch toTab {
-        case .transitions:
-            tabBarController.selectedIndex = 0
         case .animations:
+            tabBarController.selectedIndex = 0
+        case .transitions:
             tabBarController.selectedIndex = 1
         }
     }
 
     private func tabCoordinator(for tab: Tab) -> Coordinator & TabCoordinator {
         switch tab {
-        case .transitions:
-            return TransitionsCoordinator()
         case .animations:
             return AnimationsCoordinator()
+        case .transitions:
+            return AnimationsMenuCoordinator()
         }
     }
 }

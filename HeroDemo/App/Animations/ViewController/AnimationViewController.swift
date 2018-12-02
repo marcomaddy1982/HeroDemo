@@ -23,7 +23,7 @@ class AnimationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "First"
+        title = "First"
     }
 
     @IBAction private func toggleIsHeroEnabled(_ sender: UISwitch) {
