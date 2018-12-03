@@ -20,6 +20,7 @@ final class AnimationsMenuCoordinator: Coordinator {
             return
         }
         animationsMenuViewController.delegate = self
+        navigationController.interactivePopGestureRecognizer?.isEnabled = false
         navigationController.hero.isEnabled = true
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.viewControllers = [animationsMenuViewController]
@@ -56,6 +57,7 @@ extension AnimationsMenuCoordinator: AnimationsMenuDelegate {
                 return
         }
         berlinOfficeViewController.delegate = self
+        navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.pushViewController(berlinOfficeViewController, animated: true)
     }
 }
@@ -76,6 +78,7 @@ extension AnimationsMenuCoordinator: BerlinOfficeDelegate {
                 return
         }
         employeeDetailViewController.employee = employee
+        navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.pushViewController(employeeDetailViewController, animated: true)
     }
 
@@ -98,6 +101,8 @@ extension AnimationsMenuCoordinator: BerlinOfficeGridDelegate {
         switch action {
         case .showList(let berlinOfficeGridVC):
             showBerlinOffice(from: berlinOfficeGridVC)
+        case .showEmployeeImage(let berlinOfficeGridVC, let employee):
+            showEmployeeImage(from: berlinOfficeGridVC, employee: employee)
         }
     }
 
@@ -109,5 +114,15 @@ extension AnimationsMenuCoordinator: BerlinOfficeGridDelegate {
         berlinOfficeViewController.delegate = self
         // Replace the current view controller with another VC on the navigation/modal stack.
         berlinOfficeGridVC.hero.replaceViewController(with: berlinOfficeViewController)
+    }
+
+    private func showEmployeeImage(from berlinOfficeGridVC: BerlinOfficeGridViewController, employee: Employee) {
+        guard let employeeImageViewController: EmployeeImageViewController =
+            UIStoryboard.create(viewController: .employeeImage) else {
+                return
+        }
+        employeeImageViewController.employee = employee
+        navigationController.hero.navigationAnimationType = .autoReverse(presenting: .fade)
+        navigationController.pushViewController(employeeImageViewController, animated: true)
     }
 }

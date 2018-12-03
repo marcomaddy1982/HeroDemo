@@ -34,6 +34,8 @@
 		28DF82B921B4775B005943EF /* BerlinOfficeGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */; };
 		28DF82BB21B47773005943EF /* BerlinOfficeGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */; };
 		28DF82BD21B47817005943EF /* EmployeeGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */; };
+		28DF82BF21B52055005943EF /* EmployeeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82BE21B52055005943EF /* EmployeeImageViewController.swift */; };
+		28DF82C121B52064005943EF /* EmployeeImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DF82C021B52064005943EF /* EmployeeImage.storyboard */; };
 		48A1BD2395EA798CE61149E5 /* Pods_HeroDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinOfficeGridViewController.swift; sourceTree = "<group>"; };
 		28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BerlinOfficeGrid.storyboard; sourceTree = "<group>"; };
 		28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeGridViewCell.swift; sourceTree = "<group>"; };
+		28DF82BE21B52055005943EF /* EmployeeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeImageViewController.swift; sourceTree = "<group>"; };
+		28DF82C021B52064005943EF /* EmployeeImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeImage.storyboard; sourceTree = "<group>"; };
 		CFA3280A785352680990C16A /* Pods-HeroDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroDemo/Pods-HeroDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -199,6 +203,8 @@
 				28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */,
 				286F779021B465C30069C12E /* EmployeeDetailViewController.swift */,
 				286F779221B465D40069C12E /* EmployeeDetail.storyboard */,
+				28DF82BE21B52055005943EF /* EmployeeImageViewController.swift */,
+				28DF82C021B52064005943EF /* EmployeeImage.storyboard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				286F775021B418E50069C12E /* LaunchScreen.storyboard in Resources */,
 				286F778021B451060069C12E /* BerlinOffice.xcassets in Resources */,
 				286F774D21B418E50069C12E /* Assets.xcassets in Resources */,
+				28DF82C121B52064005943EF /* EmployeeImage.storyboard in Resources */,
 				286F777621B42B3F0069C12E /* Animation.storyboard in Resources */,
 				286F777121B4287A0069C12E /* AnimationsMenu.storyboard in Resources */,
 				286F778A21B459EC0069C12E /* BerlinOffice.storyboard in Resources */,
@@ -391,6 +398,7 @@
 				286F775921B419720069C12E /* Coordinator.swift in Sources */,
 				28DF82B921B4775B005943EF /* BerlinOfficeGridViewController.swift in Sources */,
 				286F778F21B45DB10069C12E /* EmployeeViewCell.swift in Sources */,
+				28DF82BF21B52055005943EF /* EmployeeImageViewController.swift in Sources */,
 				286F775E21B41CF20069C12E /* AnimationsCoordinator.swift in Sources */,
 				28DF82BD21B47817005943EF /* EmployeeGridViewCell.swift in Sources */,
 				286F779521B46A4B0069C12E /* HeroIdCreator.swift in Sources */,

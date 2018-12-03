@@ -13,6 +13,7 @@ enum ViewControllerType: String {
     case berlinOffice
     case berlinOfficeGrid
     case employeeDetail
+    case employeeImage
     case animation
     case animationSecond
 }

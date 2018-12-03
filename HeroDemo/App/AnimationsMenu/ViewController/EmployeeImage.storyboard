@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Employee Image View Controller-->
+        <scene sceneID="oVB-c1-dv4">
+            <objects>
+                <viewController storyboardIdentifier="employeeImage" id="vbQ-BW-yOt" customClass="EmployeeImageViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uog-lU-gn6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4h1-pR-yCP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Gl0-Af-d1q" firstAttribute="trailing" secondItem="4h1-pR-yCP" secondAttribute="trailing" id="Ig3-NV-X2X"/>
+                            <constraint firstItem="Gl0-Af-d1q" firstAttribute="bottom" secondItem="4h1-pR-yCP" secondAttribute="bottom" id="SGC-09-h7o"/>
+                            <constraint firstItem="4h1-pR-yCP" firstAttribute="leading" secondItem="Gl0-Af-d1q" secondAttribute="leading" id="cBI-7F-DBB"/>
+                            <constraint firstItem="4h1-pR-yCP" firstAttribute="top" secondItem="Gl0-Af-d1q" secondAttribute="top" id="eEa-2S-kRj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gl0-Af-d1q"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZuP-oB-woY" appends="YES" id="WuF-a5-S4r"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="profileImage" destination="4h1-pR-yCP" id="R2h-6b-jbr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snl-6g-Kvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZuP-oB-woY">
+                    <connections>
+                        <action selector="pan:" destination="vbQ-BW-yOt" id="hwz-Ou-cRy"/>
+                        <outlet property="delegate" destination="vbQ-BW-yOt" id="QHj-cA-F5G"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

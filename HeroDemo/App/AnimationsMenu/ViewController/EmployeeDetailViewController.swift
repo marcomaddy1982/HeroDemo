@@ -28,7 +28,7 @@ class EmployeeDetailViewController: UIViewController {
         profileImage.layer.cornerRadius = profileImage.bounds.width / 2
     }
 
-    func setUpUI() {
+    private func setUpUI() {
         guard let employee = employee else {
             return
         }

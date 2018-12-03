@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 protocol BerlinOfficeDelegate: AnyObject {
     func perform(action: BerlinOfficeAction)
@@ -27,7 +28,7 @@ class BerlinOfficeViewController: UITableViewController {
         tableView.reloadData()
     }
 
-    @IBAction private func toGridDidPress(_ sender: Any) {
+    @IBAction private func toGridButtonDidPress(_ sender: Any) {
         delegate?.perform(action: .showGrid(berlinOfficeVC: self, employees: employees))
     }
 

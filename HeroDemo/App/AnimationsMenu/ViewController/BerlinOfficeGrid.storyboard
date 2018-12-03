@@ -74,7 +74,7 @@
                     <navigationItem key="navigationItem" id="tda-4W-neO" userLabel="Grid View">
                         <barButtonItem key="rightBarButtonItem" title="to list" id="yy5-78-LJQ">
                             <connections>
-                                <action selector="toListDidPress:" destination="AxT-Ch-v9S" id="p60-2w-tIA"/>
+                                <action selector="toListButtonDidPress:" destination="AxT-Ch-v9S" id="p60-2w-tIA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

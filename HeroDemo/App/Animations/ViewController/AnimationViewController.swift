@@ -30,7 +30,7 @@ class AnimationViewController: UIViewController {
         delegate?.perform(action: .heroAnimation(isEnabled: sender.isOn))
     }
 
-    @IBAction private func nextButtonDidPress(_ sender: UISwitch) {
+    @IBAction private func nextButtonDidPress(_ sender: UIButton) {
         delegate?.perform(action: .next)
     }
 }

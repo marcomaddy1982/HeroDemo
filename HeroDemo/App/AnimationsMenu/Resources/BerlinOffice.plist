@@ -64,6 +64,18 @@
 			<key>role</key>
 			<string>Management</string>
 		</dict>
+		<dict>
+			<key>id</key>
+			<string>5</string>
+			<key>imageName</key>
+			<string>Matthew</string>
+			<key>name</key>
+			<string>Matthew</string>
+			<key>lastName</key>
+			<string>Korporaal</string>
+			<key>role</key>
+			<string>Developer</string>
+		</dict>
 	</array>
 </dict>
 </plist>
