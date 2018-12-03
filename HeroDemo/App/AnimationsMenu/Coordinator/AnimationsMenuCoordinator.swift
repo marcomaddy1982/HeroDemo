@@ -14,7 +14,7 @@ final class AnimationsMenuCoordinator: Coordinator {
     private var childCoordinators: [Coordinator] = []
     private var navigationController = UINavigationController()
 
-    func start(animated: Bool) {
+    func start() {
         guard let animationsMenuViewController: AnimationsMenuViewController =
             UIStoryboard.create(viewController: .animationsMenu) else {
             return
@@ -24,10 +24,6 @@ final class AnimationsMenuCoordinator: Coordinator {
         navigationController.hero.isEnabled = true
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.viewControllers = [animationsMenuViewController]
-    }
-
-    func cleanup(animated: Bool) {
-
     }
 }
 

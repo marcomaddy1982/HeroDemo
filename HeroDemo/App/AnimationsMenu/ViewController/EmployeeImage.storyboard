@@ -18,17 +18,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4h1-pR-yCP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8k-kM-VCA">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tKc-0k-cMH" userLabel="Switch - Hero Enable/Disable">
+                                        <rect key="frame" x="318" y="10" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggleIsHeroDebugPluginEnabled:" destination="vbQ-BW-yOt" eventType="valueChanged" id="AZn-c8-RrO"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeroDebugPluggin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8V-v2-8fr" userLabel="Label - isHeroEnabled">
+                                        <rect key="frame" x="8" y="15" width="145" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tKc-0k-cMH" firstAttribute="top" secondItem="v8k-kM-VCA" secondAttribute="top" constant="10" id="5NA-WO-2J4"/>
+                                    <constraint firstAttribute="trailing" secondItem="tKc-0k-cMH" secondAttribute="trailing" constant="8" id="K1A-aC-SaV"/>
+                                    <constraint firstItem="b8V-v2-8fr" firstAttribute="leading" secondItem="v8k-kM-VCA" secondAttribute="leading" constant="8" id="Okk-GN-j1A"/>
+                                    <constraint firstItem="b8V-v2-8fr" firstAttribute="top" secondItem="v8k-kM-VCA" secondAttribute="top" constant="15" id="RJo-dS-RK8"/>
+                                    <constraint firstAttribute="bottom" secondItem="b8V-v2-8fr" secondAttribute="bottom" constant="14" id="mDw-GR-8Jf"/>
+                                    <constraint firstAttribute="bottom" secondItem="tKc-0k-cMH" secondAttribute="bottom" constant="9" id="pAj-MV-F1J"/>
+                                    <constraint firstAttribute="height" constant="50" id="uFM-WC-q6J"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Gl0-Af-d1q" firstAttribute="trailing" secondItem="4h1-pR-yCP" secondAttribute="trailing" id="Ig3-NV-X2X"/>
-                            <constraint firstItem="Gl0-Af-d1q" firstAttribute="bottom" secondItem="4h1-pR-yCP" secondAttribute="bottom" id="SGC-09-h7o"/>
-                            <constraint firstItem="4h1-pR-yCP" firstAttribute="leading" secondItem="Gl0-Af-d1q" secondAttribute="leading" id="cBI-7F-DBB"/>
-                            <constraint firstItem="4h1-pR-yCP" firstAttribute="top" secondItem="Gl0-Af-d1q" secondAttribute="top" id="eEa-2S-kRj"/>
+                            <constraint firstItem="v8k-kM-VCA" firstAttribute="bottom" secondItem="Gl0-Af-d1q" secondAttribute="bottom" id="A9b-dP-LyE"/>
+                            <constraint firstItem="v8k-kM-VCA" firstAttribute="trailing" secondItem="Gl0-Af-d1q" secondAttribute="trailing" id="Gex-Wz-Llf"/>
+                            <constraint firstItem="v8k-kM-VCA" firstAttribute="top" secondItem="4h1-pR-yCP" secondAttribute="bottom" id="N3y-9g-R1j"/>
+                            <constraint firstItem="v8k-kM-VCA" firstAttribute="leading" secondItem="Gl0-Af-d1q" secondAttribute="leading" id="SmR-Yy-D3U"/>
+                            <constraint firstItem="4h1-pR-yCP" firstAttribute="top" secondItem="Gl0-Af-d1q" secondAttribute="top" id="Xeo-hT-EaU"/>
+                            <constraint firstItem="4h1-pR-yCP" firstAttribute="leading" secondItem="Gl0-Af-d1q" secondAttribute="leading" id="iFh-dT-tta"/>
+                            <constraint firstItem="4h1-pR-yCP" firstAttribute="trailing" secondItem="Gl0-Af-d1q" secondAttribute="trailing" id="x8d-zB-3Wk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gl0-Af-d1q"/>
                         <connections>

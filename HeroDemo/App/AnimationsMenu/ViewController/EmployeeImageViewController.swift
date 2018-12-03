@@ -53,6 +53,10 @@ class EmployeeImageViewController: UIViewController {
             }
         }
     }
+
+    @IBAction private func toggleIsHeroDebugPluginEnabled(_ sender: UISwitch) {
+        HeroDebugPlugin.isEnabled = sender.isOn
+    }
 }
 
 extension EmployeeImageViewController: UIGestureRecognizerDelegate {

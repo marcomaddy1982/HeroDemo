@@ -23,6 +23,10 @@ class BerlinOfficeGridViewController: UICollectionViewController {
     var employees: [Employee]?
     weak var delegate: BerlinOfficeGridDelegate?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
     @IBAction private func toListButtonDidPress(_ sender: Any) {
         delegate?.perform(action: .showList(berlinOfficeGridVC: self))
     }

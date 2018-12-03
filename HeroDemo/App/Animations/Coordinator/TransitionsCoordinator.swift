@@ -1,5 +1,5 @@
 //
-//  AnimationsCoordinator.swift
+//  TransitionsCoordinator.swift
 //  HeroDemo
 //
 //  Created by Marco Maddalena on 02.12.18.
@@ -9,31 +9,29 @@
 import UIKit
 import Hero
 
-final class AnimationsCoordinator: Coordinator {
+final class TransitionsCoordinator: Coordinator {
 
     private var childCoordinators: [Coordinator] = []
     private var navigationController = UINavigationController()
 
-    func start(animated: Bool) {
-        guard let animationViewController: AnimationViewController =
-            UIStoryboard.create(viewController: .animation) else {
+    func start() {
+        guard let transitionFirstViewController: TransitionFirstViewController =
+            UIStoryboard.create(viewController: .transitionFirst) else {
             return
         }
-        animationViewController.delegate = self
-        navigationController.viewControllers = [animationViewController]
+        transitionFirstViewController.delegate = self
+        navigationController.viewControllers = [transitionFirstViewController]
     }
-
-    func cleanup(animated: Bool) { }
 }
 
-extension AnimationsCoordinator: TabCoordinator {
+extension TransitionsCoordinator: TabCoordinator {
     var rootViewController: UIViewController {
         return navigationController
     }
 }
 
-extension AnimationsCoordinator: AnimationDelegate {
-    func perform(action: AnimationAction) {
+extension TransitionsCoordinator: TransitionFirstDelegate {
+    func perform(action: TransitionFirstAction) {
         switch action {
         case .heroAnimation(let isEnabled):
 //            uncomment the following code to configure different animation type
@@ -45,8 +43,8 @@ extension AnimationsCoordinator: AnimationDelegate {
     }
 
     private func showNext() {
-        guard let next: AnimationSecondViewController =
-            UIStoryboard.create(viewController: .animationSecond) else {
+        guard let next: TransitionSecondViewController =
+            UIStoryboard.create(viewController: .transitionSecond) else {
                 return
         }
 

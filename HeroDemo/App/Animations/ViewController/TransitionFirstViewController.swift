@@ -1,5 +1,5 @@
 //
-//  AnimationViewController.swift
+//  TransitionFirstViewController.swift
 //  HeroDemo
 //
 //  Created by Marco Maddalena on 02.12.18.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-protocol AnimationDelegate: AnyObject {
-    func perform(action: AnimationAction)
+protocol TransitionFirstDelegate: AnyObject {
+    func perform(action: TransitionFirstAction)
 }
 
-enum AnimationAction {
+enum TransitionFirstAction {
     case heroAnimation(isEnabled: Bool)
     case next
 }
 
-class AnimationViewController: UIViewController {
+class TransitionFirstViewController: UIViewController {
 
-    weak var delegate: AnimationDelegate?
+    weak var delegate: TransitionFirstDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()

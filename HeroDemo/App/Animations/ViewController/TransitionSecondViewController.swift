@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnimationSecondViewController: UIViewController {
+class TransitionSecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

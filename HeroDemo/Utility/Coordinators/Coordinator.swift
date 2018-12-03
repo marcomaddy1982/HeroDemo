@@ -8,8 +8,7 @@
 
 
 protocol Coordinator {
-    func start(animated: Bool)
-    func cleanup(animated: Bool)
+    func start()
 }
 
 extension Coordinator {

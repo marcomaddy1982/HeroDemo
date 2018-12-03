@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animation Second View Controller-->
+        <!--Transition Second View Controller-->
         <scene sceneID="pr5-JT-lAd">
             <objects>
-                <viewController storyboardIdentifier="animationSecond" id="eHq-zI-kn7" customClass="AnimationSecondViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="transitionSecond" id="eHq-zI-kn7" customClass="TransitionSecondViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q56-ep-XgN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

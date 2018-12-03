@@ -19,17 +19,17 @@ enum Tab {
 
 extension Tab {
     static var all: [Tab] {
-        return [.animations, .transitions]
+        return [transitions, .animations]
     }
 }
 
 extension Tab {
     var tabBarItem: UITabBarItem {
         switch self {
-        case .animations:
-            return UITabBarItem(title: "Animations", image: nil, tag: 0)
         case .transitions:
-            return UITabBarItem(title: "Transitions", image: nil, tag: 1)
+            return UITabBarItem(title: "Transitions", image: nil, tag: 0)
+        case .animations:
+            return UITabBarItem(title: "Animations", image: nil, tag: 1)
         }
     }
 }
@@ -45,14 +45,14 @@ final class TabBarCoordinator: Coordinator {
         self.window = window
     }
 
-    func start(animated: Bool) {
+    func start() {
         tabBarController.view.tintColor = UIColor.gray
         tabBarController.modalTransitionStyle = .crossDissolve
 
         Tab.all.forEach {
             let coordinator = tabCoordinator(for: $0)
             coordinator.rootViewController.tabBarItem = $0.tabBarItem
-            coordinator.start(animated: false)
+            coordinator.start()
             childCoordinators[$0] = coordinator
         }
 
@@ -62,24 +62,20 @@ final class TabBarCoordinator: Coordinator {
         window.rootViewController = tabBarController
     }
 
-    func cleanup(animated: Bool) {
-
-    }
-
     func switchTab(toTab: Tab) {
         switch toTab {
-        case .animations:
-            tabBarController.selectedIndex = 0
         case .transitions:
+            tabBarController.selectedIndex = 0
+        case .animations:
             tabBarController.selectedIndex = 1
         }
     }
 
     private func tabCoordinator(for tab: Tab) -> Coordinator & TabCoordinator {
         switch tab {
-        case .animations:
-            return AnimationsCoordinator()
         case .transitions:
+            return TransitionsCoordinator()
+        case .animations:
             return AnimationsMenuCoordinator()
         }
     }

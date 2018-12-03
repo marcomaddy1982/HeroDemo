@@ -9,13 +9,13 @@
 import UIKit
 
 enum ViewControllerType: String {
+    case transitionFirst
+    case transitionSecond
     case animationsMenu
     case berlinOffice
     case berlinOfficeGrid
     case employeeDetail
     case employeeImage
-    case animation
-    case animationSecond
 }
 
 extension UIStoryboard {

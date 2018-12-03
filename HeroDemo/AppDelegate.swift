@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
         tabBarCoordinator = TabBarCoordinator(window: window)
-        tabBarCoordinator.start(animated: false)
+        tabBarCoordinator.start()
 
         self.window?.makeKeyAndVisible()
         return true

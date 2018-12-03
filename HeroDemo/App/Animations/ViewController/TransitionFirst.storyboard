@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animation View Controller-->
+        <!--Transition First View Controller-->
         <scene sceneID="RUq-mY-Kgm">
             <objects>
-                <viewController storyboardIdentifier="animation" id="JmY-OW-REo" customClass="AnimationViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="transitionFirst" id="JmY-OW-REo" customClass="TransitionFirstViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u7w-ZE-Q7J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
