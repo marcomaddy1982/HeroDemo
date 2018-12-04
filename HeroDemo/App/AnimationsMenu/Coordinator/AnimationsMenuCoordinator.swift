@@ -44,7 +44,12 @@ extension AnimationsMenuCoordinator: AnimationsMenuDelegate {
     }
 
     private func showRegistrationFlow() {
-        
+        guard let signInViewController: SignInViewController =
+            UIStoryboard.create(viewController: .signIn) else {
+                return
+        }
+        signInViewController.delegate = self
+        navigationController.pushViewController(signInViewController, animated: true)
     }
 
     private func showBerlinOffice() {
@@ -120,5 +125,43 @@ extension AnimationsMenuCoordinator: BerlinOfficeGridDelegate {
         employeeImageViewController.employee = employee
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .fade)
         navigationController.pushViewController(employeeImageViewController, animated: true)
+    }
+}
+
+extension AnimationsMenuCoordinator: SignInDelegate {
+    func perform(action: SignInAction) {
+        switch action {
+        case .showRegistration:
+            showRegistrationFirst()
+        }
+    }
+
+    private func showRegistrationFirst() {
+        guard let registrationFirstViewController: RegistrationFirstViewController =
+            UIStoryboard.create(viewController: .registrationFirst) else {
+                return
+        }
+        registrationFirstViewController.delegate = self
+        navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
+        navigationController.pushViewController(registrationFirstViewController, animated: true)
+    }
+}
+
+extension AnimationsMenuCoordinator: RegistrationFirstDelegate {
+    func perform(action: RegistrationFirstAction) {
+        switch action {
+        case .showRegistrationSecond:
+            showRegistrtionSecond()
+        }
+    }
+
+    private func showRegistrtionSecond() {
+        guard let registrationSecondViewController: RegistrationSecondViewController =
+            UIStoryboard.create(viewController: .registrationSecond) else {
+                return
+        }
+
+        navigationController.hero.navigationAnimationType = .autoReverse(presenting: .fade)
+        navigationController.pushViewController(registrationSecondViewController, animated: true)
     }
 }

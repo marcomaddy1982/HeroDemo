@@ -13,6 +13,13 @@ enum HeroIdCreator {
     case employeeName(id: String)
     case employeeLastName(id: String)
     case employeeRole(id: String)
+    case firstLabel
+    case firstTextfield
+    case secondLabel
+    case secondTextfield
+    case thirdLabel
+    case thirdTextfield
+    case firstButton
 
     var id: String {
         switch self {
@@ -24,6 +31,20 @@ enum HeroIdCreator {
             return "lastname_\(id)"
         case .employeeRole(let id):
             return "role_\(id)"
+        case .firstLabel:
+            return "firstLabel"
+        case .firstTextfield:
+            return "firstTextfield"
+        case .secondLabel:
+            return "secondLabel"
+        case .secondTextfield:
+            return "secondTextfield"
+        case .thirdLabel:
+            return "thirdLabel"
+        case .thirdTextfield:
+            return "thirdTextfield"
+        case .firstButton:
+            return "firstButton"
         }
     }
 }

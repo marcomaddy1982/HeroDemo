@@ -31,11 +31,17 @@
 		286F779121B465C30069C12E /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F779021B465C30069C12E /* EmployeeDetailViewController.swift */; };
 		286F779321B465D40069C12E /* EmployeeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F779221B465D40069C12E /* EmployeeDetail.storyboard */; };
 		286F779521B46A4B0069C12E /* HeroIdCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F779421B46A4B0069C12E /* HeroIdCreator.swift */; };
+		28920E4621B7002A0015BAE4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28920E4521B7002A0015BAE4 /* SignInViewController.swift */; };
+		28920E4821B700A00015BAE4 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28920E4721B700A00015BAE4 /* SignIn.storyboard */; };
+		28920E4A21B702DD0015BAE4 /* RegistrationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28920E4921B702DD0015BAE4 /* RegistrationSecondViewController.swift */; };
+		28920E4C21B702FC0015BAE4 /* RegistrationSecond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28920E4B21B702FC0015BAE4 /* RegistrationSecond.storyboard */; };
 		28DF82B921B4775B005943EF /* BerlinOfficeGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */; };
 		28DF82BB21B47773005943EF /* BerlinOfficeGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */; };
 		28DF82BD21B47817005943EF /* EmployeeGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */; };
 		28DF82BF21B52055005943EF /* EmployeeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82BE21B52055005943EF /* EmployeeImageViewController.swift */; };
 		28DF82C121B52064005943EF /* EmployeeImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DF82C021B52064005943EF /* EmployeeImage.storyboard */; };
+		28DF82C521B58DAF005943EF /* RegistrationFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82C421B58DAF005943EF /* RegistrationFirstViewController.swift */; };
+		28DF82C721B58DEE005943EF /* RegistrationFirst.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DF82C621B58DEE005943EF /* RegistrationFirst.storyboard */; };
 		48A1BD2395EA798CE61149E5 /* Pods_HeroDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,11 +73,17 @@
 		286F779021B465C30069C12E /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
 		286F779221B465D40069C12E /* EmployeeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeDetail.storyboard; sourceTree = "<group>"; };
 		286F779421B46A4B0069C12E /* HeroIdCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroIdCreator.swift; sourceTree = "<group>"; };
+		28920E4521B7002A0015BAE4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		28920E4721B700A00015BAE4 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		28920E4921B702DD0015BAE4 /* RegistrationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondViewController.swift; sourceTree = "<group>"; };
+		28920E4B21B702FC0015BAE4 /* RegistrationSecond.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationSecond.storyboard; sourceTree = "<group>"; };
 		28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinOfficeGridViewController.swift; sourceTree = "<group>"; };
 		28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BerlinOfficeGrid.storyboard; sourceTree = "<group>"; };
 		28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeGridViewCell.swift; sourceTree = "<group>"; };
 		28DF82BE21B52055005943EF /* EmployeeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeImageViewController.swift; sourceTree = "<group>"; };
 		28DF82C021B52064005943EF /* EmployeeImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeImage.storyboard; sourceTree = "<group>"; };
+		28DF82C421B58DAF005943EF /* RegistrationFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFirstViewController.swift; sourceTree = "<group>"; };
+		28DF82C621B58DEE005943EF /* RegistrationFirst.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationFirst.storyboard; sourceTree = "<group>"; };
 		CFA3280A785352680990C16A /* Pods-HeroDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroDemo/Pods-HeroDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E321D232D91E2B4606046EAC /* Pods_HeroDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -195,16 +207,9 @@
 		286F776D21B428300069C12E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				286F778521B457E70069C12E /* AnimationsMenuViewController.swift */,
-				286F777021B4287A0069C12E /* AnimationsMenu.storyboard */,
-				286F778721B459E00069C12E /* BerlinOfficeViewController.swift */,
-				286F778921B459EC0069C12E /* BerlinOffice.storyboard */,
-				28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */,
-				28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */,
-				286F779021B465C30069C12E /* EmployeeDetailViewController.swift */,
-				286F779221B465D40069C12E /* EmployeeDetail.storyboard */,
-				28DF82BE21B52055005943EF /* EmployeeImageViewController.swift */,
-				28DF82C021B52064005943EF /* EmployeeImage.storyboard */,
+				28920E4421B6FF160015BAE4 /* Menu */,
+				28DF82C321B58D4F005943EF /* RegistrationFlow */,
+				28DF82C221B58D34005943EF /* BerlinOffice */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -245,6 +250,43 @@
 				28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		28920E4421B6FF160015BAE4 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				286F778521B457E70069C12E /* AnimationsMenuViewController.swift */,
+				286F777021B4287A0069C12E /* AnimationsMenu.storyboard */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		28DF82C221B58D34005943EF /* BerlinOffice */ = {
+			isa = PBXGroup;
+			children = (
+				286F778721B459E00069C12E /* BerlinOfficeViewController.swift */,
+				286F778921B459EC0069C12E /* BerlinOffice.storyboard */,
+				28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */,
+				28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */,
+				286F779021B465C30069C12E /* EmployeeDetailViewController.swift */,
+				286F779221B465D40069C12E /* EmployeeDetail.storyboard */,
+				28DF82BE21B52055005943EF /* EmployeeImageViewController.swift */,
+				28DF82C021B52064005943EF /* EmployeeImage.storyboard */,
+			);
+			path = BerlinOffice;
+			sourceTree = "<group>";
+		};
+		28DF82C321B58D4F005943EF /* RegistrationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				28DF82C421B58DAF005943EF /* RegistrationFirstViewController.swift */,
+				28DF82C621B58DEE005943EF /* RegistrationFirst.storyboard */,
+				28920E4921B702DD0015BAE4 /* RegistrationSecondViewController.swift */,
+				28920E4B21B702FC0015BAE4 /* RegistrationSecond.storyboard */,
+				28920E4521B7002A0015BAE4 /* SignInViewController.swift */,
+				28920E4721B700A00015BAE4 /* SignIn.storyboard */,
+			);
+			path = RegistrationFlow;
 			sourceTree = "<group>";
 		};
 		6FCF9C6E11E6BCB6289DA490 /* Frameworks */ = {
@@ -329,11 +371,14 @@
 				286F778021B451060069C12E /* BerlinOffice.xcassets in Resources */,
 				286F774D21B418E50069C12E /* Assets.xcassets in Resources */,
 				28DF82C121B52064005943EF /* EmployeeImage.storyboard in Resources */,
+				28920E4C21B702FC0015BAE4 /* RegistrationSecond.storyboard in Resources */,
 				286F777621B42B3F0069C12E /* TransitionFirst.storyboard in Resources */,
 				286F777121B4287A0069C12E /* AnimationsMenu.storyboard in Resources */,
 				286F778A21B459EC0069C12E /* BerlinOffice.storyboard in Resources */,
 				286F779321B465D40069C12E /* EmployeeDetail.storyboard in Resources */,
+				28920E4821B700A00015BAE4 /* SignIn.storyboard in Resources */,
 				28DF82BB21B47773005943EF /* BerlinOfficeGrid.storyboard in Resources */,
+				28DF82C721B58DEE005943EF /* RegistrationFirst.storyboard in Resources */,
 				286F777A21B4412C0069C12E /* TransitionSecond.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,11 +437,14 @@
 				286F779121B465C30069C12E /* EmployeeDetailViewController.swift in Sources */,
 				286F776121B41D120069C12E /* AnimationsMenuCoordinator.swift in Sources */,
 				286F774621B418E30069C12E /* AppDelegate.swift in Sources */,
+				28920E4621B7002A0015BAE4 /* SignInViewController.swift in Sources */,
 				286F775B21B419D00069C12E /* TabBarCoordinator.swift in Sources */,
+				28DF82C521B58DAF005943EF /* RegistrationFirstViewController.swift in Sources */,
 				286F777421B42B1E0069C12E /* TransitionFirstViewController.swift in Sources */,
 				286F778421B4521F0069C12E /* BerlinOffice.swift in Sources */,
 				286F775921B419720069C12E /* Coordinator.swift in Sources */,
 				28DF82B921B4775B005943EF /* BerlinOfficeGridViewController.swift in Sources */,
+				28920E4A21B702DD0015BAE4 /* RegistrationSecondViewController.swift in Sources */,
 				286F778F21B45DB10069C12E /* EmployeeViewCell.swift in Sources */,
 				28DF82BF21B52055005943EF /* EmployeeImageViewController.swift in Sources */,
 				286F775E21B41CF20069C12E /* TransitionsCoordinator.swift in Sources */,

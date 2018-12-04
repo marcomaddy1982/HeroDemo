@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Registration Second View Controller-->
+        <scene sceneID="hc3-pY-7bP">
+            <objects>
+                <viewController storyboardIdentifier="registrationSecond" id="21f-Ve-gD8" customClass="RegistrationSecondViewController" customModule="HeroDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nf1-Im-YBs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Nr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vk-W6-LtI" userLabel="Label - Phone Nr.">
+                                <rect key="frame" x="16" y="52" width="79" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="boH-LE-noh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HAP-1L-wC1" userLabel="TextField - Phone Nr.">
+                                <rect key="frame" x="111" y="47.5" width="248" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqo-cp-xW4" userLabel="Label - Email">
+                                <rect key="frame" x="16" y="104.5" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6uG-PG-yrr" userLabel="TextField - Email">
+                                <rect key="frame" x="111" y="100" width="248" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pin Nr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyt-5w-31x" userLabel="Label - Pin Nr.">
+                                <rect key="frame" x="16" y="157.5" width="50.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GE3-T3-tUu" userLabel="TextField - Pin Nr.">
+                                <rect key="frame" x="111" y="153" width="248" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hup-dm-QEs" userLabel="Button - Complete">
+                                <rect key="frame" x="16" y="215" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.60392156860000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NVS-Ym-aS1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <state key="normal" title="Complete">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dyt-5w-31x" firstAttribute="top" secondItem="sqo-cp-xW4" secondAttribute="bottom" constant="32" id="Bq1-p3-iCs"/>
+                            <constraint firstItem="GE3-T3-tUu" firstAttribute="width" secondItem="6uG-PG-yrr" secondAttribute="width" id="GbS-CS-0g1"/>
+                            <constraint firstItem="hup-dm-QEs" firstAttribute="leading" secondItem="5RV-gq-m0V" secondAttribute="leading" constant="16" id="OxK-nr-0Ju"/>
+                            <constraint firstItem="sqo-cp-xW4" firstAttribute="top" secondItem="7vk-W6-LtI" secondAttribute="bottom" constant="32" id="PgL-DM-mek"/>
+                            <constraint firstItem="HAP-1L-wC1" firstAttribute="centerY" secondItem="7vk-W6-LtI" secondAttribute="centerY" id="QUi-p8-65l"/>
+                            <constraint firstItem="dyt-5w-31x" firstAttribute="leading" secondItem="5RV-gq-m0V" secondAttribute="leading" constant="16" id="QwZ-O3-0no"/>
+                            <constraint firstItem="GE3-T3-tUu" firstAttribute="centerY" secondItem="dyt-5w-31x" secondAttribute="centerY" id="TVK-6c-P1e"/>
+                            <constraint firstItem="5RV-gq-m0V" firstAttribute="trailing" secondItem="hup-dm-QEs" secondAttribute="trailing" constant="16" id="X6f-ax-8oL"/>
+                            <constraint firstItem="HAP-1L-wC1" firstAttribute="leading" secondItem="7vk-W6-LtI" secondAttribute="trailing" constant="16" id="YXG-5X-Gqq"/>
+                            <constraint firstItem="5RV-gq-m0V" firstAttribute="trailing" secondItem="HAP-1L-wC1" secondAttribute="trailing" constant="16" id="YXp-3G-4Ue"/>
+                            <constraint firstItem="hup-dm-QEs" firstAttribute="top" secondItem="GE3-T3-tUu" secondAttribute="bottom" constant="32" id="ams-5o-QWQ"/>
+                            <constraint firstItem="5RV-gq-m0V" firstAttribute="trailing" secondItem="6uG-PG-yrr" secondAttribute="trailing" constant="16" id="hXi-MT-jpM"/>
+                            <constraint firstItem="6uG-PG-yrr" firstAttribute="width" secondItem="HAP-1L-wC1" secondAttribute="width" id="nqk-Jg-2FS"/>
+                            <constraint firstItem="7vk-W6-LtI" firstAttribute="top" secondItem="5RV-gq-m0V" secondAttribute="top" constant="32" id="rvF-to-aly"/>
+                            <constraint firstItem="sqo-cp-xW4" firstAttribute="leading" secondItem="5RV-gq-m0V" secondAttribute="leading" constant="16" id="uhn-p6-BuL"/>
+                            <constraint firstItem="6uG-PG-yrr" firstAttribute="centerY" secondItem="sqo-cp-xW4" secondAttribute="centerY" id="uj8-CQ-Y9X"/>
+                            <constraint firstItem="7vk-W6-LtI" firstAttribute="leading" secondItem="5RV-gq-m0V" secondAttribute="leading" constant="16" id="xqA-f2-ZZy"/>
+                            <constraint firstItem="5RV-gq-m0V" firstAttribute="trailing" secondItem="GE3-T3-tUu" secondAttribute="trailing" constant="16" id="yAe-Xk-b3Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5RV-gq-m0V"/>
+                    </view>
+                    <connections>
+                        <outlet property="completeButton" destination="hup-dm-QEs" id="7EY-tY-1lC"/>
+                        <outlet property="emailLabel" destination="sqo-cp-xW4" id="T6D-q3-Zn8"/>
+                        <outlet property="emailTextfield" destination="6uG-PG-yrr" id="ESx-tD-Dxg"/>
+                        <outlet property="phoneLabel" destination="7vk-W6-LtI" id="Cob-eh-u8t"/>
+                        <outlet property="phoneTextfield" destination="HAP-1L-wC1" id="UVx-Zg-0ah"/>
+                        <outlet property="pinLabel" destination="dyt-5w-31x" id="hAw-kl-fZW"/>
+                        <outlet property="pinTextfield" destination="GE3-T3-tUu" id="Ejd-0E-Yd5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awy-co-Pw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="76"/>
+        </scene>
+    </scenes>
+</document>

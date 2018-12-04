@@ -12,6 +12,9 @@ enum ViewControllerType: String {
     case transitionFirst
     case transitionSecond
     case animationsMenu
+    case signIn
+    case registrationFirst
+    case registrationSecond
     case berlinOffice
     case berlinOfficeGrid
     case employeeDetail
