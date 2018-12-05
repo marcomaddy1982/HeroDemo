@@ -46,7 +46,7 @@ class EmployeeImageViewController: UIViewController {
             let currentPosition = CGPoint(x: xCurrentPosition, y: yCurrentPosition)
             Hero.shared.apply(modifiers: [.position(currentPosition)], to: profileImage)
         default:
-            if progress + sender.velocity(in: nil).y / profileImage.bounds.height > 0.2 {
+            if progress + sender.velocity(in: nil).y / profileImage.bounds.height > 0.1 {
                 Hero.shared.finish()
             } else {
                 Hero.shared.cancel()

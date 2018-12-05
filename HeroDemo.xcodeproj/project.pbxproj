@@ -35,6 +35,8 @@
 		28920E4821B700A00015BAE4 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28920E4721B700A00015BAE4 /* SignIn.storyboard */; };
 		28920E4A21B702DD0015BAE4 /* RegistrationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28920E4921B702DD0015BAE4 /* RegistrationSecondViewController.swift */; };
 		28920E4C21B702FC0015BAE4 /* RegistrationSecond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28920E4B21B702FC0015BAE4 /* RegistrationSecond.storyboard */; };
+		28920E4E21B82A330015BAE4 /* RegistrationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28920E4D21B82A330015BAE4 /* RegistrationFlowCoordinator.swift */; };
+		28920E5021B82FD00015BAE4 /* BerlinOfficeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28920E4F21B82FD00015BAE4 /* BerlinOfficeCoordinator.swift */; };
 		28DF82B921B4775B005943EF /* BerlinOfficeGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */; };
 		28DF82BB21B47773005943EF /* BerlinOfficeGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */; };
 		28DF82BD21B47817005943EF /* EmployeeGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */; };
@@ -77,6 +79,8 @@
 		28920E4721B700A00015BAE4 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		28920E4921B702DD0015BAE4 /* RegistrationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondViewController.swift; sourceTree = "<group>"; };
 		28920E4B21B702FC0015BAE4 /* RegistrationSecond.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationSecond.storyboard; sourceTree = "<group>"; };
+		28920E4D21B82A330015BAE4 /* RegistrationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowCoordinator.swift; sourceTree = "<group>"; };
+		28920E4F21B82FD00015BAE4 /* BerlinOfficeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinOfficeCoordinator.swift; sourceTree = "<group>"; };
 		28DF82B821B4775B005943EF /* BerlinOfficeGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinOfficeGridViewController.swift; sourceTree = "<group>"; };
 		28DF82BA21B47773005943EF /* BerlinOfficeGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BerlinOfficeGrid.storyboard; sourceTree = "<group>"; };
 		28DF82BC21B47817005943EF /* EmployeeGridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeGridViewCell.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				286F776021B41D120069C12E /* AnimationsMenuCoordinator.swift */,
+				28920E4D21B82A330015BAE4 /* RegistrationFlowCoordinator.swift */,
+				28920E4F21B82FD00015BAE4 /* BerlinOfficeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				286F779121B465C30069C12E /* EmployeeDetailViewController.swift in Sources */,
 				286F776121B41D120069C12E /* AnimationsMenuCoordinator.swift in Sources */,
 				286F774621B418E30069C12E /* AppDelegate.swift in Sources */,
+				28920E5021B82FD00015BAE4 /* BerlinOfficeCoordinator.swift in Sources */,
 				28920E4621B7002A0015BAE4 /* SignInViewController.swift in Sources */,
 				286F775B21B419D00069C12E /* TabBarCoordinator.swift in Sources */,
 				28DF82C521B58DAF005943EF /* RegistrationFirstViewController.swift in Sources */,
@@ -448,6 +455,7 @@
 				286F778F21B45DB10069C12E /* EmployeeViewCell.swift in Sources */,
 				28DF82BF21B52055005943EF /* EmployeeImageViewController.swift in Sources */,
 				286F775E21B41CF20069C12E /* TransitionsCoordinator.swift in Sources */,
+				28920E4E21B82A330015BAE4 /* RegistrationFlowCoordinator.swift in Sources */,
 				28DF82BD21B47817005943EF /* EmployeeGridViewCell.swift in Sources */,
 				286F779521B46A4B0069C12E /* HeroIdCreator.swift in Sources */,
 			);

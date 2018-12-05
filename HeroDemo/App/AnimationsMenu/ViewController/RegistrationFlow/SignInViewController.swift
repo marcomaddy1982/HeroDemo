@@ -43,6 +43,5 @@ class SignInViewController: UIViewController {
         passwordLabel.hero.id = HeroIdCreator.secondLabel.id
         passwordTextfield.hero.id = HeroIdCreator.secondTextfield.id
         registerButton.hero.id = HeroIdCreator.firstButton.id
-        registerButton.hero.modifiers = [.fade]
     }
 }

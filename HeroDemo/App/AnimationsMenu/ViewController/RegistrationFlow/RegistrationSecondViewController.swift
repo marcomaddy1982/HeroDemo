@@ -26,22 +26,15 @@ class RegistrationSecondViewController: UIViewController {
 
     private func setUpHeroIds() {
         phoneLabel.hero.id = HeroIdCreator.firstLabel.id
-//        phoneLabel.hero.modifiers = [.fade]
         phoneTextfield.hero.id = HeroIdCreator.firstTextfield.id
-//        phoneTextfield.hero.modifiers = [.fade]
         emailLabel.hero.id = HeroIdCreator.secondLabel.id
-//        emailLabel.hero.modifiers = [.fade]
         emailTextfield.hero.id = HeroIdCreator.secondTextfield.id
-//        emailTextfield.hero.modifiers = [.fade]
         pinLabel.hero.id = HeroIdCreator.secondLabel.id
-//        pinLabel.hero.modifiers = [.fade]
         pinTextfield.hero.id = HeroIdCreator.secondTextfield.id
-//        pinTextfield.hero.modifiers = [.fade]
         completeButton.hero.id = HeroIdCreator.firstButton.id
-//        completeButton.hero.modifiers = [.fade]
 
         for subview in view.subviews {
-            subview.hero.modifiers = [.fade, .scale(0.5)]
+            subview.hero.modifiers = [.fade]
         }
     }
 }

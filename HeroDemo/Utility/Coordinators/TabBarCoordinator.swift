@@ -47,7 +47,9 @@ final class TabBarCoordinator: Coordinator {
 
     func start() {
         tabBarController.view.tintColor = UIColor.gray
-        tabBarController.modalTransitionStyle = .crossDissolve
+//      Uncomment to show tab controller fade animation.
+//        tabBarController.hero.isEnabled = true
+//        tabBarController.hero.tabBarAnimationType = .fade
 
         Tab.all.forEach {
             let coordinator = tabCoordinator(for: $0)

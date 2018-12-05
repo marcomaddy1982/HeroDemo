@@ -76,6 +76,18 @@
 			<key>role</key>
 			<string>Developer</string>
 		</dict>
+		<dict>
+			<key>id</key>
+			<string>6</string>
+			<key>imageName</key>
+			<string>Ryan</string>
+			<key>name</key>
+			<string>Ryan</string>
+			<key>lastName</key>
+			<string>Wu</string>
+			<key>role</key>
+			<string>UX Designer</string>
+		</dict>
 	</array>
 </dict>
 </plist>
