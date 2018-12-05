@@ -42,3 +42,14 @@ class EmployeeDetailViewController: UIViewController {
         roleLabel.text = "Role: \(employee.role)"
     }
 }
+
+extension EmployeeDetailViewController {
+    static func create(with employee: Employee) -> EmployeeDetailViewController {
+        guard let employeeDetailViewController: EmployeeDetailViewController =
+            UIStoryboard.create(viewController: .employeeDetail) else {
+                return EmployeeDetailViewController()
+        }
+        employeeDetailViewController.employee = employee
+        return employeeDetailViewController
+    }
+}

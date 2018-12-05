@@ -24,10 +24,7 @@ final class BerlinOfficeCoordinator: Coordinator {
 
 extension BerlinOfficeCoordinator {
     private func showBerlinOffice() {
-        guard let berlinOfficeViewController: BerlinOfficeViewController =
-            UIStoryboard.create(viewController: .berlinOffice) else {
-                return
-        }
+        let berlinOfficeViewController = BerlinOfficeViewController.create()
         berlinOfficeViewController.delegate = self
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.pushViewController(berlinOfficeViewController, animated: true)
@@ -45,24 +42,15 @@ extension BerlinOfficeCoordinator: BerlinOfficeDelegate {
     }
 
     private func showEmployeeDetail(with employee: Employee) {
-        guard let employeeDetailViewController: EmployeeDetailViewController =
-            UIStoryboard.create(viewController: .employeeDetail) else {
-                return
-        }
-        employeeDetailViewController.employee = employee
+        let employeeDetailViewController = EmployeeDetailViewController.create(with: employee)
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.pushViewController(employeeDetailViewController, animated: true)
     }
 
     private func showBerlinOfficeGrid(from berlinOfficeVC: BerlinOfficeViewController,
                                       with employees: [Employee]) {
-        guard let berlinOfficeGridViewController: BerlinOfficeGridViewController =
-            UIStoryboard.create(viewController: .berlinOfficeGrid) else {
-                return
-        }
-
+        let berlinOfficeGridViewController = BerlinOfficeGridViewController.create(with: employees)
         berlinOfficeGridViewController.delegate = self
-        berlinOfficeGridViewController.employees = employees
         // Replace the current view controller with another VC on the navigation/modal stack.
         berlinOfficeVC.hero.replaceViewController(with: berlinOfficeGridViewController)
     }
@@ -79,21 +67,14 @@ extension BerlinOfficeCoordinator: BerlinOfficeGridDelegate {
     }
 
     private func showBerlinOffice(from berlinOfficeGridVC: BerlinOfficeGridViewController){
-        guard let berlinOfficeViewController: BerlinOfficeViewController =
-            UIStoryboard.create(viewController: .berlinOffice) else {
-                return
-        }
+        let berlinOfficeViewController = BerlinOfficeViewController.create()
         berlinOfficeViewController.delegate = self
         // Replace the current view controller with another VC on the navigation/modal stack.
         berlinOfficeGridVC.hero.replaceViewController(with: berlinOfficeViewController)
     }
 
     private func showEmployeeImage(from berlinOfficeGridVC: BerlinOfficeGridViewController, employee: Employee) {
-        guard let employeeImageViewController: EmployeeImageViewController =
-            UIStoryboard.create(viewController: .employeeImage) else {
-                return
-        }
-        employeeImageViewController.employee = employee
+        let employeeImageViewController = EmployeeImageViewController.create(with: employee)
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .fade)
         navigationController.pushViewController(employeeImageViewController, animated: true)
     }

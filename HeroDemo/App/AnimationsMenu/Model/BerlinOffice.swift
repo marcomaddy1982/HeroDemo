@@ -28,6 +28,14 @@ struct Employee: Codable {
     let lastName: String
     let role: String
 
+    init() {
+        id = "xxx"
+        imageName = "xxx"
+        name = "xxx"
+        lastName = "xxx"
+        role = "xxx"
+    }
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(String.self, forKey: .id)

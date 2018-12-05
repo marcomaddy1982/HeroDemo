@@ -20,7 +20,7 @@ enum BerlinOfficeGridAction {
 
 class BerlinOfficeGridViewController: UICollectionViewController {
 
-    var employees: [Employee]?
+    private var employees: [Employee] = []
     weak var delegate: BerlinOfficeGridDelegate?
 
     override func viewDidLoad() {
@@ -35,25 +35,20 @@ class BerlinOfficeGridViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return employees?.count ?? 0
+        return employees.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "EmployeeGridViewCell", for: indexPath) as? EmployeeGridViewCell)!
-
-        guard let employee = employees?[indexPath.row] else {
-            return cell
-        }
+        let employee = employees[indexPath.row]
         cell.update(with: employee)
     
         return cell
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let employee = employees?[indexPath.row] else {
-            return
-        }
+        let employee = employees[indexPath.row]
         delegate?.perform(action: .showEmployeeImage(berlinOfficeGridVC: self, employee: employee))
     }
 }
@@ -65,5 +60,17 @@ extension BerlinOfficeGridViewController: HeroViewControllerDelegate {
 
     func heroWillStartAnimatingFrom(viewController: UIViewController) {
         collectionView.hero.modifiers = [.cascade, .delay(0.2)]
+    }
+}
+
+extension BerlinOfficeGridViewController {
+    static func create(with employees: [Employee]) -> BerlinOfficeGridViewController {
+        guard let berlinOfficeGridViewController: BerlinOfficeGridViewController =
+            UIStoryboard.create(viewController: .berlinOfficeGrid) else {
+                return BerlinOfficeGridViewController()
+        }
+
+        berlinOfficeGridViewController.employees = employees
+        return berlinOfficeGridViewController
     }
 }

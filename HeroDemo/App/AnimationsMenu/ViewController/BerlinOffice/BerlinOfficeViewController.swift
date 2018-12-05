@@ -21,7 +21,7 @@ enum BerlinOfficeAction {
 class BerlinOfficeViewController: UITableViewController {
 
     weak var delegate: BerlinOfficeDelegate?
-    private var employees: [Employee] = BerlinOffice.load()?.employees ?? []
+    private var employees: [Employee] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,5 +47,16 @@ class BerlinOfficeViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let employee = employees[indexPath.row]
         delegate?.perform(action: .showDetail(employee: employee))
+    }
+}
+
+extension BerlinOfficeViewController {
+    static func create() -> BerlinOfficeViewController {
+        guard let berlinOfficeViewController: BerlinOfficeViewController =
+            UIStoryboard.create(viewController: .berlinOffice) else {
+                return BerlinOfficeViewController()
+        }
+        berlinOfficeViewController.employees = BerlinOffice.load()?.employees ?? []
+        return berlinOfficeViewController
     }
 }

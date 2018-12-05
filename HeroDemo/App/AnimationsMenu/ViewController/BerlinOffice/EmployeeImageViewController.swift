@@ -13,7 +13,7 @@ class EmployeeImageViewController: UIViewController {
 
     @IBOutlet private weak var profileImage: UIImageView!
 
-    var employee: Employee?
+    private var employee: Employee = Employee()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +21,6 @@ class EmployeeImageViewController: UIViewController {
     }
 
     private func setUpUI() {
-        guard let employee = employee else {
-            return
-        }
         profileImage.hero.id = HeroIdCreator.employeeImage(id: employee.id).id
         let xPosition = view.bounds.width / 2
         let yPosition = view.bounds.height + view.bounds.width / 2
@@ -66,5 +63,16 @@ extension EmployeeImageViewController: UIGestureRecognizerDelegate {
         }
         let v = gestureRecognizer.velocity(in: nil)
         return v.y > abs(v.x)
+    }
+}
+
+extension EmployeeImageViewController {
+    static func create(with employee: Employee) -> EmployeeImageViewController {
+        guard let employeeImageViewController: EmployeeImageViewController =
+            UIStoryboard.create(viewController: .employeeImage) else {
+                return EmployeeImageViewController()
+        }
+        employeeImageViewController.employee = employee
+        return employeeImageViewController
     }
 }
