@@ -35,7 +35,7 @@ extension TransitionsCoordinator: TransitionFirstDelegate {
         switch action {
         case .heroAnimation(let isEnabled):
 //            uncomment the following code to configure different animation type
-            navigationController.hero.navigationAnimationType = .autoReverse(presenting: .zoom)
+//            navigationController.hero.navigationAnimationType = .autoReverse(presenting: .zoom)
             navigationController.hero.isEnabled = isEnabled
         case .next:
             showNext()

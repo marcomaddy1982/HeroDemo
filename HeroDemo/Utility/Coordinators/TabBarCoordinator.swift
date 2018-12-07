@@ -47,6 +47,7 @@ final class TabBarCoordinator: Coordinator {
 
     func start() {
         tabBarController.view.tintColor = UIColor.gray
+//        uncomment the following code to configure different animation type
 //        tabBarController.hero.isEnabled = true
 //        tabBarController.hero.tabBarAnimationType = .fade
 

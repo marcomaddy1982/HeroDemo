@@ -144,13 +144,13 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		286F775C21B41CB30069C12E /* Animations */ = {
+		286F775C21B41CB30069C12E /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
 				286F776B21B428120069C12E /* Coordinator */,
 				286F777221B42AFC0069C12E /* ViewController */,
 			);
-			path = Animations;
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 		286F775F21B41CFD0069C12E /* AnimationsMenu */ = {
@@ -177,7 +177,7 @@
 		286F776521B426220069C12E /* App */ = {
 			isa = PBXGroup;
 			children = (
-				286F775C21B41CB30069C12E /* Animations */,
+				286F775C21B41CB30069C12E /* Transitions */,
 				286F775F21B41CFD0069C12E /* AnimationsMenu */,
 			);
 			path = App;
