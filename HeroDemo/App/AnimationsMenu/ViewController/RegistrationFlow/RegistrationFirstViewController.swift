@@ -48,3 +48,14 @@ class RegistrationFirstViewController: UIViewController {
         continueButton.hero.id = HeroIdCreator.firstButton.id
     }
 }
+
+extension RegistrationFirstViewController {
+    static func create() -> RegistrationFirstViewController {
+        guard let registrationFirstViewController: RegistrationFirstViewController =
+            UIStoryboard.create(viewController: .registrationFirst) else {
+                return RegistrationFirstViewController()
+        }
+
+        return registrationFirstViewController
+    }
+}

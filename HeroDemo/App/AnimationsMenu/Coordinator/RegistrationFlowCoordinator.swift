@@ -24,10 +24,7 @@ final class RegistrationFlowCoordinator: Coordinator {
 
 extension RegistrationFlowCoordinator {
     private func showRegistrationFlow() {
-        guard let signInViewController: SignInViewController =
-            UIStoryboard.create(viewController: .signIn) else {
-                return
-        }
+        let signInViewController = SignInViewController.create()
         signInViewController.delegate = self
         navigationController.pushViewController(signInViewController, animated: true)
     }
@@ -42,10 +39,7 @@ extension RegistrationFlowCoordinator: SignInDelegate {
     }
 
     private func showRegistrationFirst() {
-        guard let registrationFirstViewController: RegistrationFirstViewController =
-            UIStoryboard.create(viewController: .registrationFirst) else {
-                return
-        }
+        let registrationFirstViewController = RegistrationFirstViewController.create()
         registrationFirstViewController.delegate = self
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.pushViewController(registrationFirstViewController, animated: true)
@@ -61,11 +55,7 @@ extension RegistrationFlowCoordinator: RegistrationFirstDelegate {
     }
 
     private func showRegistrtionSecond() {
-        guard let registrationSecondViewController: RegistrationSecondViewController =
-            UIStoryboard.create(viewController: .registrationSecond) else {
-                return
-        }
-
+        let registrationSecondViewController = RegistrationSecondViewController.create()
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .fade)
         navigationController.pushViewController(registrationSecondViewController, animated: true)
     }

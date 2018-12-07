@@ -47,7 +47,6 @@ final class TabBarCoordinator: Coordinator {
 
     func start() {
         tabBarController.view.tintColor = UIColor.gray
-//      Uncomment to show tab controller fade animation.
 //        tabBarController.hero.isEnabled = true
 //        tabBarController.hero.tabBarAnimationType = .fade
 
@@ -62,15 +61,6 @@ final class TabBarCoordinator: Coordinator {
         tabBarController.selectedIndex = 0
 
         window.rootViewController = tabBarController
-    }
-
-    func switchTab(toTab: Tab) {
-        switch toTab {
-        case .transitions:
-            tabBarController.selectedIndex = 0
-        case .animations:
-            tabBarController.selectedIndex = 1
-        }
     }
 
     private func tabCoordinator(for tab: Tab) -> Coordinator & TabCoordinator {

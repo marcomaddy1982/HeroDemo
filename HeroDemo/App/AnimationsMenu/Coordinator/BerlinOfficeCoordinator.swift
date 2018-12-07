@@ -26,7 +26,6 @@ extension BerlinOfficeCoordinator {
     private func showBerlinOffice() {
         let berlinOfficeViewController = BerlinOfficeViewController.create()
         berlinOfficeViewController.delegate = self
-        navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.pushViewController(berlinOfficeViewController, animated: true)
     }
 }
@@ -43,7 +42,6 @@ extension BerlinOfficeCoordinator: BerlinOfficeDelegate {
 
     private func showEmployeeDetail(with employee: Employee) {
         let employeeDetailViewController = EmployeeDetailViewController.create(with: employee)
-        navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.pushViewController(employeeDetailViewController, animated: true)
     }
 

@@ -30,3 +30,14 @@ class AnimationsMenuViewController: UITableViewController {
         delegate?.perform(action: indexPath.row == 0 ? .showRegistrationFlow : .showBerlinOffice)
     }
 }
+
+extension AnimationsMenuViewController {
+    static func create() -> AnimationsMenuViewController {
+        guard let animationsMenuViewController: AnimationsMenuViewController =
+            UIStoryboard.create(viewController: .animationsMenu) else {
+                return AnimationsMenuViewController()
+        }
+
+        return animationsMenuViewController
+    }
+}

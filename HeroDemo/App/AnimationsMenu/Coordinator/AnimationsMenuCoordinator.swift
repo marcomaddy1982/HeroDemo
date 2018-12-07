@@ -15,13 +15,16 @@ final class AnimationsMenuCoordinator: Coordinator {
     private var navigationController = UINavigationController()
 
     func start() {
-        guard let animationsMenuViewController: AnimationsMenuViewController =
-            UIStoryboard.create(viewController: .animationsMenu) else {
-            return
-        }
+        showAnimationsMenu()
+    }
+}
+
+extension AnimationsMenuCoordinator {
+    private func showAnimationsMenu() {
+        let animationsMenuViewController = AnimationsMenuViewController.create()
         animationsMenuViewController.delegate = self
-        navigationController.interactivePopGestureRecognizer?.isEnabled = false
         navigationController.hero.isEnabled = true
+        /* The following line could be commented since when hero.isEnabled = true the default navigation transition is the following. */
         navigationController.hero.navigationAnimationType = .autoReverse(presenting: .push(direction: .left))
         navigationController.viewControllers = [animationsMenuViewController]
     }

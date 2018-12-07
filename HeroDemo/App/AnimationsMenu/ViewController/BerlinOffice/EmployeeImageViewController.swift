@@ -35,17 +35,38 @@ class EmployeeImageViewController: UIViewController {
         let progress = translation.y / 2 / profileImage.bounds.height
         switch sender.state {
         case .began:
+            /**
+             Dismiss the current view controller with animation. Will perform a navigationController.popViewController
+             if the current view controller is contained inside a navigationController
+             */
             hero.dismissViewController()
         case .changed:
+            /**
+             Update the progress for the interactive transition.
+             */
             Hero.shared.update(progress)
             let xCurrentPosition = translation.x + profileImage.center.x
             let yCurrentPosition = translation.y + profileImage.center.y
             let currentPosition = CGPoint(x: xCurrentPosition, y: yCurrentPosition)
+            /**
+             Override modifiers during an interactive animation.
+             will set the view's position to "currentPosition"
+             */
             Hero.shared.apply(modifiers: [.position(currentPosition)], to: profileImage)
         default:
             if progress + sender.velocity(in: nil).y / profileImage.bounds.height > 0.1 {
+                /**
+                 Finish the interactive transition.
+                 Will stop the interactive transition and animate from the
+                 current state to the **end** state
+                 */
                 Hero.shared.finish()
             } else {
+                /**
+                 Cancel the interactive transition.
+                 Will stop the interactive transition and animate from the
+                 current state to the **beginning** state
+                 */
                 Hero.shared.cancel()
             }
         }

@@ -45,3 +45,14 @@ class SignInViewController: UIViewController {
         registerButton.hero.id = HeroIdCreator.firstButton.id
     }
 }
+
+extension SignInViewController {
+    static func create() -> SignInViewController {
+        guard let signInViewController: SignInViewController =
+            UIStoryboard.create(viewController: .signIn) else {
+                return SignInViewController()
+        }
+
+        return signInViewController
+    }
+}
